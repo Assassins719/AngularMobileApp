@@ -1,0 +1,13 @@
+<header class="header">
+  <h1>Search for events</h1>
+  <label for="date">Date</label>
+  <input class="event-filter" type="date" id="date" autofocus="" [(ngModel)]="eventFilter.Date" />
+  <label for="location">Location</label>
+
+  <input class="event-filter" type="text" id="location" [(ngModel)]="eventFilter.location" 
+  (keyup.enter)="onEnter()" placeholder="Your current position" 
+  (setAddress) = "getAddress($event)"  ng2-google-place-autocomplete 
+  />
+  <!--<input type="text" ng2-google-place-autocomplete [(ngModel)]="address" />-->
+<!--[options]='options'-->
+</header>

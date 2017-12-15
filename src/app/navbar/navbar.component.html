@@ -1,0 +1,31 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" (click)="toggleState()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">Opera Doodle Night</a>
+    </div>
+    <div class="collapse navbar-collapse" [ngClass]="{ 'in': isIn }">
+      <ul class="nav navbar-nav">
+        <li><a routerLink="/filter" routerLinkActive="active" (click)="isIn=false">Home</a></li>
+        <li><a routerLink="/add-event" routerLinkActive="active" (click)="isIn=false">Add Event</a>
+
+        </li>
+        <li><a routerLink="/test-route-1" routerLinkActive="active" (click)="isIn=false">Test route 1</a></li>
+        <li><a routerLink="/edit" routerLinkActive="active" (click)="isIn=false">Edit</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+
+    </div>
+
+
+  </div>
+</nav>

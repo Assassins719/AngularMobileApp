@@ -1,0 +1,39 @@
+<div>
+  <span style="font-size:20px;font-weight:bold">Artist</span>
+  <button class="btn btn-success" style="float:right" (click)="saveArtist()">Save</button>
+</div>
+<input type="text" class="filterInput" placeholder="Name" value="strName" [(ngModel)]="strName"/>
+<input type="text" class="filterInput" placeholder="wiki Url" value="strUrl" [(ngModel)]="strUrl"/>
+
+<table class="table table-hover table-striped table-sortable" style="height:100px;border:1px gray solid;margin-top:10px;margin-bottom:10px;border-radius:5px;overflow:scroll">
+  <thead fix-head>
+    <tr>
+      <th table-sort-field="Trait" table-sort-initial ng-click="tableSort()">
+        <span>Trait</span>
+        <i class="fa" ng-class="{'fa-sort-desc': reverse(), 'fa-sort-asc': !reverse()}" ng-show="current()" aria-hidden="true"></i>
+      </th>
+      <th table-sort-field="Hasit" table-sort-reverse-initial ng-click="tableSort()">
+        <span>Has it</span>
+        <i class="fa" ng-class="{'fa-sort-desc': reverse(), 'fa-sort-asc': !reverse()}" ng-show="current()" aria-hidden="true"></i>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of composers; let i=index">
+      <td>{{item.name}}</td>
+      <td>
+        <input id="checkBox" type="checkbox" [(ngModel)]="item.checked" >
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+  <span style="font-size:20px;font-weight:bold">Works Composer</span>
+  <button class="btn btn-success" style="float:right" (click)="updateWorks()">{{strWorkBtn}}</button>
+</div>
+<div style="height:150px;border:1px gray solid;margin-top:10px;margin-bottom:10px;padding:5px;border-radius:5px;overflow:scroll">
+  <div *ngFor="let item of workList; let i=index" (click)='selectWork(i)' [ngClass]="i == workIndex ? 'selected': 'notselected'">
+    {{item.name}}
+  </div>
+</div>

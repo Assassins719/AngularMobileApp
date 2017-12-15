@@ -1,0 +1,17 @@
+
+<section class="main" *ngIf="events && events.length > 0">
+  <div class="list-group">
+    <ul>
+    <!--<a *ngFor="let event of events" href="#" class="list-group-item">First item</a>-->
+    
+    <app-event-list-item *ngFor="let event of events" [event]="event">
+    </app-event-list-item>
+    <!--<li *ngFor="let event of events">
+      <app-event-list-item [event]="event" >
+        
+      </app-event-list-item>
+    </li>-->
+
+    </ul>
+  </div>
+</section>

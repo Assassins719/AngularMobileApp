@@ -1,0 +1,22 @@
+<h1>Artists</h1>
+<div style="text-align:right;font-size:18px;">
+  Occupation Filter
+  <br>
+  <select (change)="onSelected($event.target.value)">
+    <option selected>All</option>
+    <option>Composer</option>
+    <option>Singer</option>
+    <option>Pianist</option>
+  </select>
+</div>
+
+<div class="clearfix" style="margin-top:10px">
+  <input type="text" class="filterInput" placeholder="Filter"  [(ngModel)]="ngFilter" (ngModelChange)="onChange($event)" />
+  <button class="btn btn-success" style="width:30%;float:right;display:block;" (click)="gotoArtist()">{{strBtn}}</button>
+</div>
+
+<div class="filterResult_div">
+  <div *ngFor="let item of artists; let i=index" (click)='selectArtist(i)' [ngClass]="i == index ? 'selected': 'notselected'">
+    {{item.name}}
+  </div>
+</div>

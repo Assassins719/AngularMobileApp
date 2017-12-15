@@ -1,0 +1,53 @@
+[33mcommit 5b6449cfe0392bd1cd056a549f4870b72bca4ccd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: samuelhemma <samuelhemma@1410TIB8400-01.tibble.gisab.org>
+Date:   Tue Aug 15 18:13:21 2017 +0200
+
+    working with event detail view
+
+[33mcommit f8b1bba043115cca0709725376efde3ec000ea58[m[33m ([m[1;33mtag: 1.0.7[m[33m, [m[1;31mbitbucket/master[m[33m)[m
+Author: samuelhemma <samuelhemma@1410TIB8400-01.tibble.gisab.org>
+Date:   Thu Jul 27 13:12:56 2017 +0200
+
+    implementing pushState (urls) so that users can bookmark serachresults etc
+
+[33mcommit 1455f4ba744306d844672fb01e4f079f5ddfbde9[m[33m ([m[1;33mtag: 1.0.6[m[33m)[m
+Author: samuelhemma <samuelhemma@1410TIB8400-01.tibble.gisab.org>
+Date:   Sat Jul 22 17:04:41 2017 +0200
+
+    refactoring - app structure - one module with a routing-module for each feature
+
+[33mcommit bdba5b2af14f8cc2ff4261b5f0716f2bdb7770b5[m[33m ([m[1;33mtag: 1.0.5[m[33m)[m
+Author: samuelhemma <samuelhemma@1410TIB8400-01.tibble.gisab.org>
+Date:   Sat Jul 22 14:22:17 2017 +0200
+
+    updating form with hidden form controls to transfer additional data
+
+[33mcommit 8ac4e6e04c2cb81c350c69631d309815ed90ce4f[m[33m ([m[1;33mtag: 1.0.4[m[33m)[m
+Author: samuelhemma <samuelhemma@1410TIB8400-01.tibble.gisab.org>
+Date:   Sat Jul 8 00:36:22 2017 +0200
+
+    implementing improved reactive forms validation for add event component
+
+[33mcommit 27a3f1f2c8102ab23cea3c286374cbef4a6ff512[m[33m ([m[1;33mtag: 1.0.3[m[33m)[m
+Author: samuelhemma <samuelhemma@1410TIB8400-01.tibble.gisab.org>
+Date:   Fri Jul 7 22:05:16 2017 +0200
+
+    testing some validation in add event form
+
+[33mcommit f281fcf9f03b4a0d971da04dec087a8b1de2e138[m[33m ([m[1;33mtag: 1.0.2[m[33m)[m
+Author: samuelhemma <samuelhemma@1410TIB8400-01.tibble.gisab.org>
+Date:   Fri Jul 7 19:35:01 2017 +0200
+
+    events can now be added to fake db
+
+[33mcommit 1e54024402029488aa9fb0f1adf048912658b77e[m[33m ([m[1;33mtag: 1.0.1[m[33m)[m
+Author: samuelhemma <samuelhemma@1410TIB8400-01.tibble.gisab.org>
+Date:   Wed Jul 5 10:25:14 2017 +0200
+
+    add event component, date time fix
+
+[33mcommit 57a9bcdc5bf1e97357f7c7d3b175767f3e125124[m[33m ([m[1;33mtag: 1.0.0[m[33m)[m
+Author: samuelhemma <samuelhemma@1410TIB8400-01.tibble.gisab.org>
+Date:   Wed Jul 5 09:24:14 2017 +0200
+
+    Initial commit

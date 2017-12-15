@@ -1,0 +1,18 @@
+<div>
+  <span class="pageTitle">Venue</span>
+  <button class="btn btn-success" style="float:right" (click)="saveVenue()">Save</button>
+</div>
+<input type="text" class="filterInput" placeholder="Name" value="{{strName}}" [(ngModel)]="strName"/>
+<input type="text" class="filterInput" placeholder="wiki Url" value="{{strUrl}}" [(ngModel)]="strUrl"/>
+<input class="filterLocation" type="text" placeholder="Location" value="{{strAddress}}" id="location" (setAddress)="getAddress($event)" ng2-google-place-autocomplete
+/>
+<div style="height:10px; width:100%"></div>
+<!-- <sebm-google-map [latitude]="lat" [longitude]="lng">
+  <sebm-google-map-marker [latitude]="lat" [longitude]="lng">
+  </sebm-google-map-marker>
+</sebm-google-map> -->
+<div id="map-canvas"></div>
+<div>
+  <div style="width:50%;float:left;overflow: hidden;">Lat:{{lat}},</div>
+  <div style="width:50%;float:right;overflow: hidden">Lng:{{lng}}</div>
+</div>

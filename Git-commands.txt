@@ -1,0 +1,16 @@
+git add -A
+
+git commit -m "(message)"
+
+git tag [version nr] [commit ID - 10 numbers]
+
+git push bitbucket master
+
+
+
+
+git checkout tags/[version nr]
+
+git checkout master 
+
+git status

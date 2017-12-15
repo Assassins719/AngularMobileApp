@@ -1,0 +1,7 @@
+"styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "assets/css/todomvc-common.css",
+        "assets/css/todomvc-app.css",
+        "styles.css",
+        "assets/css/operaDoodleNight.css"
+      ]

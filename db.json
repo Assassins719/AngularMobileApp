@@ -1,0 +1,124 @@
+{
+  "todos": [
+    {
+      "title": "Samme",
+      "complete": false,
+      "id": 8
+    },
+    {
+      "title": "skriva prov",
+      "complete": false,
+      "id": 9
+    }
+  ],
+  "events": [
+    {
+      "title": "Operatest",
+      "genre": "opera",
+      "author": "Samuel",
+      "venue": {
+        "location": "Stockholm, Sweden",
+        "gpsLatitude": 59.32932349999999,
+        "gpsLongitude": 18.068580800000063
+      },
+      "date": "2017-07-13T17:10:00.000Z",
+      "id": 1
+    },
+    {
+      "title": "TestOpera2",
+      "genre": "opera",
+      "author": "Linda",
+      "venue": {
+        "location": "Malmö, Sweden",
+        "gpsLatitude": 55.604981,
+        "gpsLongitude": 13.003822000000014
+      },
+      "date": "2017-07-20T08:12:00.000Z",
+      "id": 2
+    },
+    {
+      "title": "Jesus Christ superstar",
+      "genre": "musikal",
+      "author": "Andrew Loyd Webber",
+      "venue": {
+        "location": "Copenhagen, Denmark",
+        "gpsLatitude": 55.6760968,
+        "gpsLongitude": 12.568337100000008
+      },
+      "date": "2017-08-17T15:30:00.000Z",
+      "id": 3
+    },
+    {
+      "title": "ABBA the musical",
+      "genre": "musikal",
+      "author": "Andrew Loyd Webber",
+      "venue": {
+        "location": "Västerås, Sweden",
+        "gpsLatitude": 59.60990049999999,
+        "gpsLongitude": 16.544809100000066
+      },
+      "date": "2017-09-08T08:10:00.000Z",
+      "id": 4
+    },
+    {
+      "title": "RockOpera",
+      "genre": "rockopera",
+      "author": "Linda",
+      "venue": {
+        "location": "Lund, Sweden",
+        "gpsLatitude": 55.70466010000001,
+        "gpsLongitude": 13.191007300000024
+      },
+      "date": null,
+      "id": 5
+    },
+    {
+      "title": "Shakespear in love",
+      "genre": "opera",
+      "author": "William S",
+      "venue": {
+        "location": "Vienna, Austria",
+        "gpsLatitude": 48.2081743,
+        "gpsLongitude": 16.37381890000006
+      },
+      "date": "2017-07-14T10:10:00.000Z",
+      "id": 6
+    },
+    {
+      "title": "Svansjön",
+      "genre": "opera",
+      "author": "Kim Andersson",
+      "venue": {
+        "location": "Gävle, Sweden",
+        "gpsLatitude": 60.6748796,
+        "gpsLongitude": 17.14127259999998
+      },
+      "date": "2017-07-12T10:12:00.000Z",
+      "id": 7
+    },
+    {
+      "title": "Opera Show",
+      "genre": "opera",
+      "author": "August Bering",
+      "venue": {
+        "location": "Linköping, Sverige",
+        "gpsLatitude": 58.41080700000001,
+        "gpsLongitude": 15.621372699999938
+      },
+      "date": "2017-10-13T16:30:00.000Z",
+      "id": 8
+    },
+    {
+      "title": "Fantomen på Operan",
+      "genre": "opera",
+      "author": "Karl Hamilton",
+      "venue": {
+        "location": "Örebro, Sweden",
+        "gpsLatitude": 59.2752626,
+        "gpsLongitude": 15.213410500000009
+      },
+      "date": "2017-10-06T09:15:00.000Z",
+      "id": 9
+    }
+  ]
+}

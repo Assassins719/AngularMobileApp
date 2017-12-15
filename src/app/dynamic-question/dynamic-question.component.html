@@ -1,0 +1,60 @@
+<div class="question form-group has-feedback" [formGroup]="form" [ngSwitch]="question.controlType">
+    <label class="control-label col-sm-2" [attr.for]="question.id">{{ question.label }}</label>
+
+    <div class="col-sm-6">
+
+        <input class="form-control" [id]="question.id" [type]="question.type" *ngSwitchCase="'text-input'" [formControlName]="question.id"
+        />
+
+        <input class="form-control" [id]="question.id" [type]="question.type" *ngSwitchCase="'place-autocomplete'" (setAddress)="getAddress($event)"
+            [formControlName]="question.id" ng2-google-place-autocomplete (keyup)="onKey($event)"/>
+
+        <input class="form-control" [id]="question.id" [type]="question.type" *ngSwitchCase="'date'" [formControlName]="question.id"
+        />
+
+        <input class="form-control" [id]="question.id" [type]="question.type" *ngSwitchCase="'time'" [formControlName]="question.id"
+        />
+
+
+        <select class="form-control" [id]="question.id" *ngSwitchCase="'select'" [formControlName]="question.id">
+        <option [value]="answer.value" *ngFor="let answer of question.options">
+            {{ answer.label }}
+        </option>
+    </select>
+
+        <textarea class="form-control" [id]="question.id" *ngSwitchCase="'textarea'" [formControlName]="question.id"></textarea>
+
+        <div class="radio-group" *ngSwitchCase="'radio'">
+            <span class="radio" *ngFor="let answer of question.options">
+            <input type="radio" [id]="question.id + answer.value" [value]="answer.value"
+                [formControlName]="question.id">
+            <label [attr.for]="question.id + answer.value">{{ answer.label }}</label>
+        </span>
+        </div>
+
+        <!--<div class="error" *ngIf="!isValid">
+            This question is required!
+        </div>-->
+
+
+        <span class="glyphicon glyphicon-ok form-control-feedback" *ngIf="form.controls[question.id].valid && form.controls[question.id].touched"></span>
+        <span class="glyphicon glyphicon-warning-sign form-control-feedback" *ngIf="!form.controls[question.id].valid && form.controls[question.id].touched"></span>
+
+        <div *ngIf="!form.controls[question.id].valid && form.controls[question.id].touched">
+
+            {{form.controls[question.id].errors.errorMessage ? form.controls[question.id].errors.errorMessage: ""}}
+            <!-- {{debugTest()}} -->
+
+            <!-- <div class="alert alert-danger" [hidden]="!form.controls[question.id].errors.required">
+                This field is required.
+            </div>
+            <div class="alert alert-danger" [hidden]="!form.controls[question.id].errors.minlength">
+                Enter at least {{form.get(question.id).getError('minlength') ? form.get(question.id).getError('minlength').requiredLength: ""}} characters.
+            </div>
+            <div class="alert alert-danger" [hidden]="!form.controls[question.id].errors.maxlength">
+            </div> -->
+
+        </div>
+
+    </div>
+</div>

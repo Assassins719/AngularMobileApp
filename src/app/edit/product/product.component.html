@@ -1,0 +1,33 @@
+<div>
+  <span style="font-size:20px;font-weight:bold">Production</span>
+  <button class="btn btn-success" style="float:right" (click)="saveProduct()">Save</button>
+</div>
+<input type="text" class="filterInput" placeholder="Title" value="strTitle" [(ngModel)]="strTitle" />
+<div style="height:10px; width:100%"></div>
+<div style="text-align:left;font-size:18px;">
+  Venue
+  <br>
+  <select style="width:100%;">
+    <option selected>Composer</option>
+    <option>Singer</option>
+    <option>Pianist</option>
+  </select>
+</div>
+<div class="clearfix">
+  <button class="btn btn-success" style="float:right;display:block;padding:0px 10px;" (click)="addWork()">Add Work</button>
+</div>
+<div style="height:60px;border:1px gray solid;margin-top:10px;margin-bottom:5px;border-radius:5px;overflow:scroll">
+</div>
+<div class="clearfix" >
+  <button class="btn btn-success" style="float:right;display:block;padding:0px 10px" (click)="addEvent()">Add Event</button>
+</div>
+<div style="height:60px;border:1px gray solid;margin-top:10px;margin-bottom:5px;border-radius:5px;overflow:scroll">
+</div>
+<div class="clearfix">
+  <button class="btn btn-success" style="float:right;display:block;padding:0px 10px" (click)="assignPart()">Assign selected Part</button>
+</div>
+<div style="height:75px;border:1px gray solid;margin-top:10px;margin-bottom:5px;border-radius:5px;overflow:scroll">
+</div>
+<div class="clearfix">
+  <button class="btn btn-success" style="float:right;display:block;padding:0px 10px" (click)="copyEvent()">Copy selected Event</button>
+</div>

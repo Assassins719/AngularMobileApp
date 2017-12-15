@@ -1,0 +1,45 @@
+<div>
+  <span style="font-size:20px;font-weight:bold">Work</span>
+  <button class="btn btn-success" style="float:right" (click)="saveWork()">Save</button>
+</div>
+<input type="text" class="filterInput" placeholder="Work Title" value="strName" [(ngModel)]="strName" />
+
+<div class="clearfix">
+  <button class="btn btn-success" style="float:right;margin-top:25px" (click)="editComposer()">Add Composer</button>
+</div>
+<div style="height:120px;border:1px gray solid;margin-top:10px;margin-bottom:10px;padding:5px;border-radius:5px;overflow:scroll">
+  <div *ngFor="let item of composers; let i=index">
+    {{item.name}}
+  </div>
+</div>
+
+<div class="clearfix">
+  <button class="btn btn-success" style="float:right;margin-top:25px" (click)="editPart()">{{strPartBtn}}</button>
+</div>
+<div style="height:120px;border:1px gray solid;margin-top:10px;margin-bottom:10px;padding:5px;border-radius:5px;overflow:scroll">
+  <div *ngFor="let item of parts; let i=index" (click)='selectPart(i)' [ngClass]="i == partIndex ? 'selected': 'notselected'">
+    {{item.name}}
+  </div>
+</div>
+
+<div (click)="onContainerClicked($event)" class="modal fade" tabindex="-1" [ngClass]="{'in': visibleAnimate}" [ngStyle]="{'display': visibleComposer ? 'block' : 'none', 'opacity': visibleAnimate ? 1 : 0}">
+  <div style="margin-left:10%;margin-right:10%;margin-top:100px;padding:10px;background:#fff;border-radius:10px">
+    <h4>Add Composer</h4>
+    <div style="text-align:center;width:100%;">
+      <ss-multiselect-dropdown [options]="composerList" [(ngModel)]="authors" [settings]="dropdownSetting" ></ss-multiselect-dropdown>
+    </div>
+    <div style="text-align:right">
+      <button class="btn btn-primary" style="margin-top:20px" (click)="addComposer()">Save</button>
+    </div>
+  </div>
+</div>
+
+<div (click)="onContainerClicked($event)" class="modal fade" tabindex="-1" [ngClass]="{'in': visibleAnimate}" [ngStyle]="{'display': visiblePart ? 'block' : 'none', 'opacity': visibleAnimate ? 1 : 0}">
+  <div style="margin-left:10%;margin-right:10%;margin-top:100px;padding:10px;background:#fff;border-radius:10px">
+    <h4>Add Part</h4>
+    <input type="text" class="filterInput" placeholder="Part Name" value="strPartName" [(ngModel)]="strPartName" />
+    <div style="text-align:right">
+      <button class="btn btn-primary" style="margin-top:25px" (click)="addPart()">Save</button>
+    </div>
+  </div>
+</div>

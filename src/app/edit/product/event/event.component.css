@@ -1,0 +1,10 @@
+.calendar{
+    width:45%;
+    border:1px gray solid;
+    float:left;
+}
+.data{
+    width:45%;
+    border:1px gray solid;
+    float: right;
+}

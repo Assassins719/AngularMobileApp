@@ -1,0 +1,9 @@
+<!--<div class="view">
+  <label>{{event.venue.location}}</label>
+  <label>{{event.date}}</label>
+</div>-->
+
+<li class="list-group-item" [ngClass]="className" (click)="onSelectEvent()" (mouseenter)="onMouseEnterOut($event)" (mouseleave)="onMouseEnterOut($event)">
+  <strong>{{event.name}}</strong>
+  <span class="location">{{event.production}}</span>  
+</li>

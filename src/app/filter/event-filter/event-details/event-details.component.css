@@ -1,0 +1,26 @@
+.event-card-datebox, .event-card-body {
+    height: 150px;
+    
+}
+
+.event-card-datebox {
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.event-card-body {
+    padding: 10px 0px 10px 10px;
+}
+
+.datebox-month, .datebox-year{
+   font-size: 19px; 
+}
+
+.datebox-day{
+   font-size: 45px; 
+}
+
+
+
+

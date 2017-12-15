@@ -1,0 +1,23 @@
+.filterInput{
+    margin-top: 10px;
+    width:100%;border:none;border-bottom:1px gray solid;height:35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.modal {
+    background: rgba(0,0,0,0.6);
+  }
+  .selected{
+    background: #aaa;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.notselected{
+    padding-left: 10px;
+}
+.dropdown{
+    width: 100%!important;
+}
+.dropdown-inline{
+    width:100%!important;
+}

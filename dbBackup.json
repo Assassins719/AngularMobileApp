@@ -1,0 +1,61 @@
+{
+  "todos": [
+    {
+      "title": "Samme",
+      "complete": false,
+      "id": 8
+    },
+    {
+      "title": "skriva prov",
+      "complete": false,
+      "id": 9
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "location": "Göteborg",
+      "date": "2012-04-23",
+      "gpsLatitude": "57.70887",
+      "gpsLongitude": "11.974559999999997"
+    },
+    {
+      "id": 2,
+      "location": "Stockholm",
+      "date": "2017-01-13",
+      "gpsLatitude": "59.32932349999999",
+      "gpsLongitude": "18.068580800000063"
+    },
+    {
+      "id": 3,
+      "location": "Malmö",
+      "date": "1997-11-10",
+      "gpsLatitude": "55.604981",
+      "gpsLongitude": "13.003822000000014"
+    },
+    {
+      "title": "Operatest",
+      "genre": "opera",
+      "author": "Samuel",
+      "venue": {
+        "location": "Stockholm, Sweden",
+        "gpsLatitude": 59.32932349999999,
+        "gpsLongitude": 18.068580800000063
+      },
+      "date": "2017-07-13T17:10:00.000Z",
+      "id": 4
+    },
+    {
+      "title": "TestOpera2",
+      "genre": "opera",
+      "author": "Linda",
+      "venue": {
+        "location": "Malmö, Sweden",
+        "gpsLatitude": 55.604981,
+        "gpsLongitude": 13.003822000000014
+      },
+      "date": "2017-07-20T08:12:00.000Z",
+      "id": 5
+    }
+  ]
+}

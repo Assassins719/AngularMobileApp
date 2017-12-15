@@ -1,0 +1,23 @@
+<div>
+  <span style="font-size:20px;font-weight:bold">Works</span>
+</div>
+
+<div style="text-align:left;font-size:18px;">
+  <br>
+  Composer
+  <br><br>
+  <select style="width:100%;">
+    <option selected>Composer</option>
+    <option>Singer</option>
+    <option>Pianist</option>
+  </select>
+</div>
+
+<div class="clearfix" style="margin-top:50px">
+  <input type="text" class="filterInput" placeholder="Filter" [(ngModel)]="ngFilter" (ngModelChange)="onChange($event)" />
+</div>
+<div class="filterResult_div">
+  <!-- <div *ngFor="let item of venues; let i=index" (click)='selectVenue(i)' [ngClass]="i == index ? 'selected': 'notselected'">
+    
+  </div> -->
+</div>

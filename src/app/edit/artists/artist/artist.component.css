@@ -1,0 +1,15 @@
+.filterInput{
+    margin-top: 10px;
+    width:100%;border:none;border-bottom:1px gray solid;height:35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.selected{
+    background: #aaa;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.notselected{
+    padding-left: 10px;
+}

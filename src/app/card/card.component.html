@@ -1,0 +1,10 @@
+<div *ngFor="let cardBox of cardBoxes" [ngSwitch]="cardBox.type">
+
+  <span *ngSwitchCase="cardBoxType.ImageBox"> ImageBox </span>
+
+  <span *ngSwitchCase="cardBoxType.DateBox"> DateBox </span>
+
+  <span *ngSwitchCase="cardBoxType.BodyBox"> BodyBox </span>
+
+
+</div>

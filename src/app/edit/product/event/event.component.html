@@ -1,0 +1,29 @@
+<div>
+  <span style="font-size:20px;font-weight:bold">Event</span>
+  <button class="btn btn-success" style="float:right">Save</button>
+</div>
+<div style="margin-top:15px;margin-bottom:15px">
+  <input class="calendar" type="date" id="date" autofocus="" />
+  <input class="data" type="time" id="date" autofocus="" />
+</div>
+<div style="margin:50px 10px 10px;font-size:16px;">Production venue:xxx</div>
+<div style="margin:10px;font-size:16px;">Venue Override?</div>
+<div style="text-align:left;font-size:18px;">
+  <br>
+  Venue
+  <br>
+  <select style="width:100%;">
+    <option selected>Venue</option>
+    <option>Singer</option>
+    <option>Pianist</option>
+  </select>
+</div>
+<div style="margin:10px 15px;font-size:18px;">Coat Override</div>
+<div style="height:150px;border:1px gray solid;margin-top:10px;margin-bottom:10px;border-radius:5px;overflow:scroll">
+</div>
+<div class="clearfix">
+  <button class="btn btn-success" style="float:right;display:block;padding:0px 10px;margin-bottom:10px" (click)="gotoArtist()">Override selected part</button>
+</div>
+<div class="clearfix">
+  <button class="btn btn-success" style="float:right;display:block;padding:0px 10px;" (click)="gotoArtist()">Duplicate this event</button>
+</div>

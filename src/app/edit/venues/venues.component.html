@@ -1,0 +1,10 @@
+<h1>Venues</h1>
+<div class="clearfix" style="margin-top:10px">
+  <input type="text" class="filterInput" placeholder="Filter" [(ngModel)]="ngFilter" (ngModelChange)="onChange($event)" />
+  <button class="btn btn-success btnadd" (click)="gotoVenue()">{{strBtn}}</button>
+</div>
+<div class="filterResult_div">
+  <div *ngFor="let item of venues; let i=index" (click)='selectVenue(i)' [ngClass]="i == index ? 'selected': 'notselected'">
+    {{item.name}}
+  </div>
+</div>
